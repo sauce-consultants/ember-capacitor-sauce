@@ -15,7 +15,7 @@ module.exports = async (serve) => {
       if (!json.hasOwnProperty('server')) {
         json.server = {};
       }
-      json.server.url = `https://${ip.address()}:4200`;
+      json.server.url = `http://${ip.address()}:4200`;
     } else {
       if (json.hasOwnProperty('server')
           && json.server.hasOwnProperty('url')) {
